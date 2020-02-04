@@ -3,7 +3,7 @@ Dave DuPuis
 `r format(Sys.time(), '%B %d, %Y')`  
 
 
-###Test Script
+### Test Script
 
 
 
@@ -47,7 +47,7 @@ Dave DuPuis
 
 
 
-###flagDates
+### flagDates
 
 Purpose: to identify dates of interest in a timeseries
 Takes: data = a time series of data with most recent days on the left/first; windowFilter = filter/mask/kernal to convolve with data before z-scoring; cutoff = all dates with z-scores about this value are returned
@@ -82,7 +82,7 @@ flagDates <- function(data, windowFilter, cutoff = 2.17)
 ```
 
 
-###convolveData
+### convolveData
 
 takes a times series and a windowFilter
 returns convolution of times series and windowFilter, removes oldest length(windowFilter)-1 days (to remove edge effects)
@@ -115,7 +115,7 @@ convolveData <- function(data, windowFilter)
 ```
 
 
-###edgeAndSecondDerivFilter
+### edgeAndSecondDerivFilter
 
 
 Purpose: A filter used to detect rapid shifts in a time-series
@@ -130,7 +130,7 @@ edgeAndSecondDerivFilter <- function()
 ```
 
 
-###burstFilter
+### burstFilter
 
 **Not Needed for intial story**
 
@@ -154,7 +154,7 @@ burstFilter <- function()
 
 
 
-###Helper function to read in data
+### Helper function to read in data
 
 
 ```r
